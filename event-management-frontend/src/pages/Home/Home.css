@@ -1,0 +1,396 @@
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page{
+    background:#f8fafc;
+    overflow-x:hidden;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+/* =========================
+ HERO
+========================= */
+
+.hero-section{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8,#3b82f6);
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    padding:80px 0;
+}
+
+.hero-section::before{
+    content:"";
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    position:absolute;
+    right:-220px;
+    top:-200px;
+    background:rgba(255,255,255,.08);
+}
+
+.hero-section::after{
+    content:"";
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    position:absolute;
+    left:-100px;
+    bottom:-100px;
+    background:rgba(255,255,255,.05);
+}
+
+.hero-badge{
+    background:white;
+    color:#2563eb;
+    padding:8px 18px;
+    border-radius:30px;
+    display:inline-block;
+    font-weight:600;
+    margin-bottom:20px;
+    font-size:.9rem;
+}
+
+.hero-title{
+    font-size:3.7rem;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero-title span{
+    color:#ffd54f;
+}
+
+.hero-text{
+    margin:30px 0;
+    font-size:1.1rem;
+    opacity:.95;
+    max-width:520px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.hero-btn{
+    padding:14px 30px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+    transition:.3s;
+}
+
+.hero-illustration{
+    height:500px;
+    position:relative;
+}
+
+.ticket-card{
+    width:230px;
+    height:230px;
+    border-radius:30px;
+    background:white;
+    color:#2563eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:90px;
+    position:absolute;
+    top:120px;
+    left:130px;
+    box-shadow:0 30px 60px rgba(0,0,0,.25);
+    animation:float 4s ease-in-out infinite;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+}
+
+.circle1{
+    width:120px;
+    height:120px;
+    background:#60a5fa;
+    top:40px;
+    left:20px;
+}
+
+.circle2{
+    width:90px;
+    height:90px;
+    background:#bfdbfe;
+    right:30px;
+    bottom:80px;
+}
+
+.circle3{
+    width:160px;
+    height:160px;
+    background:#1e40af;
+    right:120px;
+    top:180px;
+}
+
+/* =========================
+ STATS
+========================= */
+
+.stats-section{
+    margin-top:-70px;
+    position:relative;
+    z-index:5;
+}
+
+.stats-card{
+    background:white;
+    border-radius:18px;
+    text-align:center;
+    padding:35px 20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stats-card:hover{
+    transform:translateY(-10px);
+}
+
+.stats-icon{
+    color:#2563eb;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.stats-card h2{
+    font-size:2.2rem;
+    font-weight:700;
+}
+
+.stats-card p{
+    color:#666;
+}
+
+/* =========================
+ FEATURED EVENTS
+========================= */
+
+.featured-section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.6rem;
+    font-weight:700;
+}
+
+.section-title p{
+    color:#666;
+}
+
+.event-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+}
+
+.event-card:hover{
+    transform:translateY(-10px);
+}
+
+.event-image{
+    height:200px;
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:80px;
+    color:white;
+}
+
+.event-body{
+    padding:25px;
+}
+
+.event-body h4{
+    font-weight:700;
+}
+
+.event-body p{
+    color:#666;
+    margin-bottom:8px;
+}
+
+.event-body h5{
+    color:#2563eb;
+    margin:18px 0;
+    font-weight:700;
+}
+
+/* =========================
+ CATEGORY
+========================= */
+
+.category-section{
+    padding:80px 0;
+    background:white;
+}
+
+.category-card{
+    background:#f8fafc;
+    border-radius:20px;
+    text-align:center;
+    padding:45px 20px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.category-card:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-8px);
+}
+
+.category-icon{
+    font-size:55px;
+    margin-bottom:18px;
+}
+
+/* =========================
+ WHY US
+========================= */
+
+.why-section{
+    padding:90px 0;
+}
+
+.why-card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+}
+
+.why-card h3{
+    font-size:55px;
+}
+
+.why-card h5{
+    margin-top:18px;
+    font-weight:700;
+}
+
+.why-card p{
+    color:#666;
+}
+
+/* =========================
+ FOOTER
+========================= */
+
+.home-footer{
+    background:#111827;
+    color:white;
+    padding:50px 0;
+}
+
+.home-footer h3{
+    font-weight:700;
+}
+
+.home-footer hr{
+    opacity:.2;
+}
+
+/* =========================
+ ANIMATION
+========================= */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+ RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.hero-title{
+font-size:2.7rem;
+}
+
+.hero-illustration{
+margin-top:60px;
+height:320px;
+}
+
+.ticket-card{
+width:170px;
+height:170px;
+font-size:70px;
+left:50%;
+transform:translateX(-50%);
+top:50px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-section{
+text-align:center;
+}
+
+.hero-buttons{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.hero-title{
+font-size:2.2rem;
+}
+
+.stats-section{
+margin-top:30px;
+}
+
+.featured-section,
+.category-section,
+.why-section{
+padding:60px 0;
+}
+
+}
