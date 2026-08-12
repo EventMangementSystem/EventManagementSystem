@@ -1,0 +1,113 @@
+.dashboard-container {
+    padding: 30px 0;
+}
+
+.dashboard-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: #212529;
+}
+
+.dashboard-card {
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.dashboard-card .card-body {
+    padding: 25px;
+}
+
+.dashboard-card h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.dashboard-card h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.events-card {
+    background: linear-gradient(135deg, #0d6efd, #4dabf7);
+}
+
+.bookings-card {
+    background: linear-gradient(135deg, #198754, #51cf66);
+}
+
+.customers-card {
+    background: linear-gradient(135deg, #fd7e14, #ffb74d);
+}
+
+.payments-card {
+    background: linear-gradient(135deg, #6f42c1, #9c6ade);
+}
+
+.revenue-card {
+    border-radius: 15px;
+    border: none;
+}
+
+.revenue-card .card-body {
+    padding: 35px;
+}
+
+.revenue-title {
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.revenue-amount {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #198754;
+}
+
+.chart-card {
+    border: none;
+    border-radius: 15px;
+}
+
+.chart-card .card-header {
+    background: #fff;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.chart-card .card-body {
+    height: 380px;
+}
+
+.chart-card canvas {
+    max-height: 320px;
+}
+
+@media (max-width: 768px) {
+
+    .dashboard-card h2 {
+        font-size: 2rem;
+    }
+
+    .revenue-amount {
+        font-size: 2.2rem;
+    }
+
+    .chart-card .card-body {
+        height: 300px;
+    }
+
+}
